@@ -34,3 +34,21 @@
     $('.social-links a').tooltip();
 
 })(jQuery);
+document.getElementById('achievements-toggle').addEventListener('click', function() {
+  toggleCategory('achievements');
+});
+
+document.getElementById('skills-toggle').addEventListener('click', function() {
+  toggleCategory('skills');
+});
+
+function toggleCategory(category) {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    if (card.getAttribute('data-category') === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
