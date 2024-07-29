@@ -10,7 +10,7 @@
   }
   
   .checkbox-wrapper-41 input[type="checkbox"] {
-    -webkit-appearance: none;
+    appearance: none;
     width: var(--size);
     height: calc(var(--size) / 2);
     background-color: #96e7fe;
