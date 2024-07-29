@@ -110,3 +110,11 @@
   .card p {
     margin: 0;
   }
+
+
+  /* contact section additional css */
+  .icon {
+    font-size:2em;
+    color: #227fea;
+}
+

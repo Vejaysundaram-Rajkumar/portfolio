@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-section {
+            background-color: #e3f2fd;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-section h2, .contact-section h3 {
+            color: #007acc;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .contact-item {
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-item .icon {
+            font-size: 2em;
+            color: #007acc;
+        }
+
+        .contact-item a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .availability, .location {
+            margin-bottom: 10px;
+        }
+
+        .availability h3, .location h3 {
+            margin-bottom: 5px;
+        }
+
+        .availability p, .location p {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, opportunities, or just want to say hi, feel free to reach out to me through any of the channels below.</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope icon"></i>
+                <span class="text">email@example.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin icon"></i>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github icon"></i>
+                <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-hackerrank icon"></i>
+                <a href="https://www.hackerrank.com/yourprofile" target="_blank">hackerrank.com/yourprofile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-code icon"></i>
+                <a href="https://leetcode.com/yourprofile" target="_blank">leetcode.com/yourprofile</a>
+            </div>
+        </div>
+
+        <div class="availability">
+            <h3>Availability</h3>
+            <p>Open for projects, collaborations, and consultations. Feel free to reach out!</p>
+        </div>
+
+        <div class="location">
+            <h3>Location</h3>
+            <p>Chennai, India</p>
+        </div>
+    </div>
+</body>
+</html>
