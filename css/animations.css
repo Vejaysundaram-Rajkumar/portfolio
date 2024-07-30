@@ -111,10 +111,14 @@
     margin: 0;
   }
 
-
+@media (max-width: 767px) {
+  .card p{
+    font-size:15px;
+  }
+}
   /* contact section additional css */
   .icon {
-    font-size:2em;
+    font-size:1.5em;
     color: #227fea;
 }
 
