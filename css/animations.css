@@ -48,35 +48,7 @@
     background-color: #3de823;
     border-radius: 100px  30px 100px 100px;
   }
-/* Cloud speech bubble styling */
-.cloud {
-  position: absolute;
- /* Adjust based on the cloud image size */
-  left: 90%;
-  top: 10%;
-  transform: translateX(-50%);
-  width: 250px; /* Adjust based on the cloud size */
-  padding: 10px;
-  background: #2a2b2b00;
-  border: 2px dashed #000000; /* Dashed border for the cloud */
-  border-radius: 50px; 
-  display: flex;
-  flex-wrap: wrap;
-  
-}
 
-.cloud::after {
-  content: '';
-  position: absolute;
-  top: 50%; /* Adjust the vertical position of the tail */
-  left: -20px; /* Position the tail on the left */
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 20px solid #000000; /* Color of the cloud */
-}
   .card-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -144,23 +116,9 @@
   .card p{
     font-size:15px;
   }
-  .cloud{
-    width: 70%;
-    top:-25%;
-    left:80%;
-    border: transparent; 
-  }
-  .cloud::after{
-    display: none;
-
-  }
+  
 }
 
-@media (max-width: 1024px) {
-  .cloud{
-    top:5%; 
-  }
-}
   /* contact section additional css */
   .icon {
     font-size:1.5em;
